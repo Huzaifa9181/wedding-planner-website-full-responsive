@@ -1,0 +1,30 @@
+.rounded-lg {
+    border-radius: 1rem !important;
+}
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+.custom-separator {
+    width: 5rem;
+    height: 6px;
+    border-radius: 1rem;
+}
+
+.text-uppercase {
+    letter-spacing: 0.2em;
+}
+
+body {
+    color: #514B64;
+    min-height: 100vh;
+}
+
+#price-section {
+    background-color: #f7f7f7;
+}
+
+.port {
+    margin-bottom: 70px;
+}
