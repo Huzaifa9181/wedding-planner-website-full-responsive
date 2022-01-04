@@ -28,3 +28,20 @@ body {
 .port {
     margin-bottom: 70px;
 }
+
+.form {
+    margin: 20px;
+    width: 87%;
+}
+
+.error {
+    color: red;
+    text-align: left;
+    padding: 10px 0px 2px 5px;
+    font-family: system-ui;
+}
+
+form.form {
+    position: relative;
+    margin-top: 500px;
+}
