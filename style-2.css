@@ -228,3 +228,35 @@ h2#parra-heading {
         line-height: 40px;
     }
 }
+
+h1#gal-head-2,
+#ab-head {
+    position: relative;
+    top: 105px;
+    font-size: 50px;
+}
+
+@media screen and (min-width:300px) and (max-width:812px) {
+    h1#gal-head-2,
+    #ab-head {
+        position: relative;
+        top: 55px;
+        font-size: 40px;
+    }
+}
+
+h1.title-decorate-4.text-center {
+    position: relative;
+    top: 183px;
+}
+
+#our-team-head {
+    position: relative;
+    top: -250px;
+}
+
+div#card-row {
+    position: relative;
+    top: -250px;
+    margin-bottom: -200px;
+}

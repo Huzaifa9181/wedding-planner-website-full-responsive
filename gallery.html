@@ -14,10 +14,28 @@
     <!-- css -->
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style-2.css">
+    <!-- navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
+    <!-- navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo5.png" class="img-fluid nav-logo" alt="">
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <div class="header-img material-parallax parallax ">
         <img src="images/page-img.jpg " class="img-fluid gallery-header-top ">
     </div>
@@ -25,14 +43,7 @@
     </div> -->
     <div class="container">
         <div class="row text-center justify-content-center">
-            <div class="col-12 col-lg-9">
-                <h1>Gallery</h1>
-                <ul style="display: flex; justify-content: center;">
-                    <li class="li-gallery"><a class="home-anc" href="index.html">Home</a></li>
-                    <li class="icon li-gallery"><i class="bi bi-dot"></i></li>
-                    <li class="li-gallery">Gallery</li>
-                </ul>
-            </div>
+            <h1 id="gal-head-2">Gallery</h1>
         </div>
     </div>
 

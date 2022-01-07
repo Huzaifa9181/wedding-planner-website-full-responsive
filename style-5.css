@@ -43,5 +43,38 @@ body {
 
 form.form {
     position: relative;
-    margin-top: 500px;
+    margin-top: 0px;
+}
+
+#reg-sub {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-heading {
+    position: relative;
+    top: -238px;
+    font-size: 64px;
+}
+
+@media screen and (min-width:300px) and (max-width:812px) {
+    form.form {
+        position: relative;
+        margin-top: 0px;
+    }
+    .contact-heading {
+        position: relative;
+        top: -81px;
+        font-size: 36px;
+    }
+    /* h1#contact-heading-2 {
+        position: relative;
+        top: 102px;
+        font-size: 50px;
+    } */
+    h1#gal-head-2 {
+        position: relative;
+        top: 55px;
+        font-size: 40px;
+    }
 }

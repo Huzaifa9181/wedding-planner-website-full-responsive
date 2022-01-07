@@ -15,12 +15,30 @@
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
     <!-- Jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
+    <!-- navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
+    <!-- navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo5.png" class="img-fluid nav-logo" alt="">
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <div class="header-img material-parallax parallax ">
         <img src="images/page-img.jpg " class="img-fluid gallery-header-top ">
     </div>
@@ -28,14 +46,7 @@
     </div> -->
     <div class="container">
         <div class="row text-center justify-content-center">
-            <div class="col-12 col-lg-9">
-                <h1>About</h1>
-                <ul style="display: flex; justify-content: center;">
-                    <li class="li-gallery"><a class="home-anc" href="index.html">Home</a></li>
-                    <li class="icon li-gallery"><i class="bi bi-dot"></i></li>
-                    <li class="li-gallery">About</li>
-                </ul>
-            </div>
+            <h1 id="ab-head">About</h1>
         </div>
     </div>
 
@@ -142,7 +153,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 offset-sm-3 mt-4 mb-4">
+            <div id="our-team-head" class="col-sm-6 offset-sm-3 mt-4 mb-4">
                 <h1 class="title-decorate-4  text-center"></h1>
                 <h2 class="gallery-heading text-center">Our Team</h2>
                 <p class="fac-para mt-5 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, ipsum!</p>
@@ -151,16 +162,16 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="card-row" class="row">
             <div class="col-md-4">
                 <div class="card-box text-center">
                     <div class="user-pic">
                         <img src="images/my-img-2.jpg" class="img-fluid" alt="User Pic">
                     </div>
                     <h4>Huzaifa Ahmed</h4>
-                    <h6>Web Designer</h6>
+                    <h6>Web Developer</h6>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati saepe possimus blanditiis. Aut minima quam dignissimos! Nam, corporis nemo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis excepturi, incidunt a laborum doloremque corporis quibusdam recusandae placeat nemo.</p>
                     <hr>
                     <a href="#" class="btn btn-primary">Know More</a>
                 </div>
@@ -172,7 +183,7 @@
                         <img src="images/team-2.jpg" class="img-fluid" alt="User Pic">
                     </div>
                     <h4>Labiba</h4>
-                    <h6>Web Developer</h6>
+                    <h6>UI / UX Designer</h6>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis excepturi, incidunt a laborum doloremque corporis quibusdam recusandae placeat nemo.</p>
                     <hr>
@@ -186,7 +197,7 @@
                         <img src="images/team-1.jpg" class="img-fluid" alt="User Pic">
                     </div>
                     <h4>Syed Muttayab</h4>
-                    <h6>Front End Developer</h6>
+                    <h6>website presenter</h6>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi suscipit blanditiis cumque delectus facilis tenetur recusandae consequuntur, corporis possimus.</p>
                     <hr>

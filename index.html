@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- navigation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -38,11 +40,8 @@
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Feedback</a></li>
         </ul>
     </nav>
-
-    </div>
     <!--header img -->
     <div class="container-fluid">
         <div id="main-img">
@@ -216,102 +215,7 @@
                 </div>
             </div>
         </div>
-        <!-- Plan your wedding -->
-        <div class="row  plan-row justify-content-center  mt-5 mb-5">
-            <h1 class="title-decorate-3  text-center"></h1>
-            <h2 class="gallery-heading text-center">Plan Your Wedding In 4 Steps</h2>
-            <p class="fac-para mt-5 text-center">Planning your wedding is not complex at all if you decide to trust us with this matter. <br> This short guide will help you find out more about our services.</p>
-            <div class="col-md-8 mt-5 container-steps">
-                <div id="display-1" class="portion-1">
-                    <div class="point-1">01</div>
-                    <div class="container-content">
-                        <h5 class="area-top">Discuss your wedding with our planners</h5>
-                        <div class="text mt-3">
-                            <h4 class="head-para-2 ">Initial Consultation</h4>
-                        </div>
-                        <span style="display: flex;"><h5 class="inc-step">Includes:</h5>
-                            <div class="text-2">
-                                <h4 class="head-para">free consultation and budget definition</h4>
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <!--step 2 -->
-                <div id="display-2" class="portion-2" style="display: none;">
-                    <div class="point-1">02</div>
-                    <div class="container-content">
-                        <h5 class="area-top">Choose the venue of your wedding ceremony</h5>
-                        <div class="text mt-3">
-                            <h4 class="head-para-2 ">Selecting the date and location</h4>
-                        </div>
-                        <span style="display: flex;"><h5 class="inc-step">Includes:</h5>
-                                <div class="text-2">
-                                    <h4 class="head-para" id="inc-para"> picking a restaurant/hotel or any other venue</h4>
-                                </div>
-                            </span>
-                    </div>
-                </div>
-                <!-- step 3 -->
-                <div id="display-3" class="portion-3" style="display: none;">
-                    <div class="point-1">03</div>
-                    <div class="container-content">
-                        <h5 class="area-top">Select the options of your wedding</h5>
-                        <div class="text mt-3">
-                            <h4 class="head-para-2 ">Pick Vendors & Additional Services</h4>
-                        </div>
-                        <span style="display: flex;"><h5 class="inc-step">Includes:</h5>
-                                <div class="text-2">
-                                    <h4 class="head-para" id="inc-para">browsing vendors & services catalog</h4>
-                                </div>
-                            </span>
-                    </div>
-                </div>
-                <!-- step 4 -->
-                <div id="display-4" class="portion-4" style="display: none;">
-                    <div class="point-1">04</div>
-                    <div class="container-content">
-                        <h5 class="area-top">Final step to your happiness</h5>
-                        <div class="text mt-3">
-                            <h4 class="head-para-2 ">Confirm All Details & Get Married</h4>
-                        </div>
-                        <span style="display: flex;"><h5 class="inc-step">Includes:</h5>
-                                <div class="text-2">
-                                    <h4 class="head-para" id="inc-para"> final wedding plan overview</h4>
-                                </div>
-                            </span>
-                    </div>
-                </div>
-                <!-- This is content for show to click step buttons -->
-                <div class="content-for-planning">
-                    <p>To make your wedding the best it can be, we recommend to consult with us first. Our team of wedding planners and vendors is always glad to provide you with necessary recommendations and tips on planning the most important event in
-                        your life.
-                    </p>
-                </div>
-                <div class="content-for-planning-2" style="display: none;">
-                    <p>The second step of wedding planning implies selecting the date of your future wedding ceremony and its location as well as the place where the wedding dinner will happen. We have a various catalog of restaurants and hotels ready to
-                        help you.
-                    </p>
-                </div>
-                <div class="content-for-planning-3" style="display: none;">
-                    <p>Choosing vendors is always a tricky and responsible step, whether it means selecting proper flourist services or considering various cake designs. We will help you make the right choice based on your preferences and budget.
-                    </p>
-                </div>
-                <div class="content-for-planning-4" style="display: none;">
-                    <p>Finally, it’s time for getting ready to the best part of the whole event - getting married. But still, before it happens we recommend to check every vendor, service, and additional option you picked to make sure everything will go
-                        the way you want it to be.
-                    </p>
-                </div>
-            </div>
-            <!-- Steps Button -->
-            <div class="col-md-3 btn-cont text-center mt-5">
-                <div class="steps">
-                    <p id="step-1" class="step-1">STEP #1</p>
-                    <p id="step-2" class="step">STEP #2</p>
-                    <p id="step-3" class="step">STEP #3</p>
-                    <p id="step-4" class="step">STEP #4</p>
-                </div>
-            </div>
-        </div>
+
         <div class="row justify-content-center mt-5 mb-5">
             <h1 class="title-decorate-2 text-center"></h1>
             <h2 class="gallery-heading text-center">What Our Clients Say</h2>
@@ -665,11 +569,10 @@
 
         // navigation
         $(document).ready(function() {
-                $(".menu-btn").click(function() {
-                    $(".container-fluid").toggle()
-                })
+            $(".menu-btn").click(function() {
+                $(".container-fluid").toggle()
             })
-            // console.log("huzaifa", "labiba", "mutayyab")
+        })
     </script>
 </body>
 
