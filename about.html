@@ -33,9 +33,10 @@
         <i class="fas fa-bars"></i>
         </label>
         <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="register.html">Register</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
@@ -56,7 +57,7 @@
             <h1 class="title-decorate-3  text-center"></h1>
             <h2 class="gallery-heading text-center">Plan Your Wedding In 4 Steps</h2>
             <p class="fac-para mt-5 text-center">Planning your wedding is not complex at all if you decide to trust us with this matter. <br> This short guide will help you find out more about our services.</p>
-            <div class="col-md-8 mt-5 container-steps">
+            <div class="col-lg-8 mt-5 container-steps">
                 <div id="display-1" class="portion-1">
                     <div class="point-1">01</div>
                     <div class="container-content">
@@ -138,7 +139,7 @@
                 </div>
             </div>
             <!-- Steps Button -->
-            <div id="btn-cont-step" class="col-md-3 text-center mt-5">
+            <div id="btn-cont-step" class="col-lg-3 text-center mt-5">
                 <div class="steps">
                     <p id="step-1" class="step-1">STEP #1</p>
                     <p id="step-2" class="step">STEP #2</p>
@@ -169,27 +170,47 @@
                         <img src="images/my-img-2.jpg" class="img-fluid" alt="User Pic">
                     </div>
                     <h4>Huzaifa Ahmed</h4>
-                    <h6>Web Developer</h6>
+                    <h6>Manager</h6>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis excepturi, incidunt a laborum doloremque corporis quibusdam recusandae placeat nemo.</p>
+                    <p>My name is Huzaifa Ahmed,and I am a manger of this company and i have pakistan nationality. </p>
+                    <p id="hide">Experience : i have 8 years experience in working of this field in working of this wedding management</p>
                     <hr>
-                    <a href="#" class="btn btn-primary">Know More</a>
+                    <p id="know" class="btn btn-primary">Know More</p>
                 </div>
             </div>
-
+            <script>
+                $("#hide").hide();
+                $('#know').click(function() {
+                    $('#hide').show()
+                    $("#know").hide()
+                })
+            </script>
             <div class="col-md-4">
                 <div class="card-box text-center">
                     <div class="user-pic">
                         <img src="images/team-2.jpg" class="img-fluid" alt="User Pic">
                     </div>
-                    <h4>Labiba</h4>
-                    <h6>UI / UX Designer</h6>
+                    <h4>Labiba Mirza</h4>
+                    <h6>Event Planner</h6>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis excepturi, incidunt a laborum doloremque corporis quibusdam recusandae placeat nemo.</p>
-                    <hr>
-                    <a href="#" class="btn btn-primary">Know More</a>
+                    <p>Personal Detail: Labiba Mirza<br> Age: 20 <br> Experience: 10 years experience making wedding planer <br> Hardworking I am hardworking and always the last to leave the office in the evening.
+                        <p id="hide2">
+                            Define goals and objectives Establish a budget Build your team Pick your venue and date Develop event branding Plan your program Confirm sponsors, exhibitors, and speakers Identify and select tech tools Create a marketing and promotional plan Determine
+                            your measurement
+                            <hr>
+                        </p>
+                        <p id="know2" class="btn btn-primary">Know More</p>
                 </div>
             </div>
+
+            <script>
+                $("#hide2").hide();
+                $('#know2').click(function() {
+                    $('#hide2').show()
+                    $("#know2").hide()
+                })
+            </script>
+
 
             <div class="col-md-4">
                 <div class="card-box text-center">
@@ -197,7 +218,7 @@
                         <img src="images/team-1.jpg" class="img-fluid" alt="User Pic">
                     </div>
                     <h4>Syed Muttayab</h4>
-                    <h6>website presenter</h6>
+                    <h6>Chief</h6>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi suscipit blanditiis cumque delectus facilis tenetur recusandae consequuntur, corporis possimus.</p>
                     <hr>
@@ -225,7 +246,7 @@
                     <form class="row g-3">
                         <div class="col-auto">
                             <label for="email" class="visually-hidden">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                            <input type="email" required class="form-control" id="email" placeholder="email@example.com">
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-primary btn-subscribe mb-3">Subscribe</button>

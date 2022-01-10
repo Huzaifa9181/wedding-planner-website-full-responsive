@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.show{
+    display: block;
+}
+
 nav {
     display: flex;
     height: 80px;

@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- navigation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script>
+        function alert() {
+            document.getElementsByTagName('h1').style.display = "";
+        }
+    </script>
 </head>
 
 <body>
+    <h1 style="display: none;">hello</h1>
     <!-- navigation bar -->
     <nav>
         <div class="logo">
@@ -37,10 +43,11 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <div class="header-img material-parallax parallax ">
@@ -48,73 +55,36 @@
     </div>
     <div class="container">
         <div class="row text-center hide justify-content-center">
-            <!-- <div class="col-12 col-lg-9"> -->
             <h1 class="contact-heading">Contact</h1>
         </div>
-        <!-- </div> -->
     </div>
 
-
-
-    <form class="form hide" onsubmit="return validation()">
-        <table class="table table-hover table-bordered text-center justify-content-center">
-            <tr>
-                <td><label>firstName :</label></td>
-                <td><input class="form-control" type="text" id="username" placeholder="huzaifa">
-                    <p id="username-error" class="error"></p>
-                </td>
-
-            </tr>
-            <tr>
-                <td><label>lastName :</label></td>
-                <td><input class="form-control" type="text" id="lastname" placeholder="ahmed">
-                    <p id="lastname-error" class="error"></p>
-                </td>
-
-            </tr>
-
-            <tr>
-                <td><label>Password :</label></td>
-                <td><input class="form-control" type="password" id="password" placeholder="password">
-                    <p id="password-error" class="error"></p>
-                </td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" required name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                        <label class="form-check-label" for="inlineRadio3">Other</label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><label>Date OF Birth</label></td>
-                <td><input class="form-control" required type="date"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit" class="btn btn-success"><a id="reg-sub" href="register.html">Submit</a></button>
-                </td>
-            </tr>
-        </table>
-    </form>
-
+    <div class="container">
+        <form onsubmit="return validation()">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary mb-5" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
     <!-- Footer -->
     <div class="container-fluid hide">
         <div id="footer-row-container" class="row footer-row text-white">
             <div class="col-md-4">
                 <!-- Logo -->
                 <img src="images/logo1.png" class="img-fluid logo">
-                <p class="footer-para">SKYWED provides a focused approach towards the wedding planning segment. With years of experience in the event industry, we stand on a stronger base with the most creative, enthusiastic and committed team.
+                <p class="footer-para">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.139448255306!2d67.03085831500417!3d24.927318984022445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1641643709776!5m2!1sen!2s"
+                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </p>
                 <hr class="footer-line">
                 <p class="footer-para">© 2021 SKYWED. Privacy Policy</p>
@@ -126,7 +96,7 @@
                     <form class="row g-3">
                         <div class="col-auto">
                             <label for="email" class="visually-hidden">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                            <input type="email" required class="form-control" id="email" placeholder="email@example.com">
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-primary btn-subscribe mb-3">Subscribe</button>
@@ -166,61 +136,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        let username = document.getElementById("username");
-        let lastname = document.getElementById("lastname");
-        let password = document.getElementById("password");
-        returnValue = 1;
-
-        function validation() {
-
-            if (username.value == "") {
-                document.getElementById("username-error").innerHTML = "User Name Is Empty"
-                returnValue = 0;
-            } else if (username.value.length < 6) {
-                document.getElementById("username-error").innerHTML = "At least write a 6 letters"
-                returnValue = 0;
-            } else {
-                document.getElementById("username-error").innerHTML = ""
-            }
-
-            if (lastname.value == "") {
-                document.getElementById("lastname-error").innerHTML = "Last Name Is Empty";
-                returnValue = 0;
-
-            } else if (lastname.value.length <= 5) {
-                document.getElementById("lastname-error").innerHTML = "At Least Write a 5 Letters";
-                returnValue = 0;
-            } else {
-                document.getElementById("lastname-error").innerHTML = "";
-            }
-
-            if (password.value == "") {
-                document.getElementById("password-error").innerHTML = "Password Is Empty";
-                returnValue = 0;
-
-            } else if (password.value.length <= 7) {
-                document.getElementById("password-error").innerHTML = "At Least Write a 8 Letters";
-                returnValue = 0;
-            } else {
-                document.getElementById("password-error").innerHTML = "";
-            }
-
-
-            if (returnValue) {
-                return true;
-            } else {
-                return false;
-            }
-        };
-        // navigation
-        $(document).ready(function() {
-            $(".menu-btn").click(function() {
-                $(".hide").toggle()
-            })
-        })
-    </script>
 </body>
 
 </html>
