@@ -766,3 +766,12 @@ div#footer-row-container {
 .caption {
     height: 128px;
 }
+
+img#nav-logos {
+    width: 250px;
+    margin-top: -14px;
+}
+
+#footer-logo{
+        width: 84%;
+}
