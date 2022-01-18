@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="style-2.css">
     <!-- navigation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 
 <body>
@@ -33,24 +35,23 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a class="active" href="gallery.html">Gallery</a></li>
-            <li><a href="register.html">Register</a></li>
             <li><a href="signlog.html">Log In</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <div class="header-img material-parallax parallax ">
+    <div class="header-img material-parallax parallax hide ">
         <img src="images/page-img.jpg " class="img-fluid gallery-header-top ">
     </div>
     <!-- <div class="parallax-content breadcrumbs-custom context-dark ">
     </div> -->
-    <div class="container">
+    <div class="container hide">
         <div class="row text-center justify-content-center">
             <h1 id="gal-head-2">Gallery</h1>
         </div>
     </div>
 
     <!-- gallery images -->
-    <div class="container-fluid mt-6" id="gallery-img-container">
+    <div class="container-fluid mt-6 hide" id="gallery-img-container">
         <div id="gallery-row" class="row text-center mt-5">
             <h1 class="title-decorate-2 col-12"></h1>
             <h2 class="gallery-heading col-12">Our Gallery</h2>
@@ -132,7 +133,7 @@
 
 
     <!-- Footer -->
-    <div class="container-fluid">
+    <div class="container-fluid hide">
         <div id="footer-row-container" class="row footer-row text-white">
             <div class="col-md-4">
                 <!-- Logo -->
@@ -196,50 +197,11 @@
 
 
     <script>
-        // Open the Modal
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        // Close the Modal
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
+        $(document).ready(function() {
+            $(".menu-btn").click(function() {
+                $(".hide").toggle()
+            })
+        })
     </script>
 </body>
 

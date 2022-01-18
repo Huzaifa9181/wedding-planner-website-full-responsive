@@ -31,29 +31,29 @@
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
+        <!-- <i class="bi bi-justify"></i> -->
         </label>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="register.html">Register</a></li>
             <li><a href="signlog.html">Log In</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <div class="header-img material-parallax parallax ">
+    <div class="header-img material-parallax parallax hide-nav">
         <img src="images/page-img.jpg " class="img-fluid gallery-header-top ">
     </div>
     <!-- <div class="parallax-content breadcrumbs-custom context-dark ">
     </div> -->
-    <div class="container">
+    <div class="container hide-nav">
         <div class="row text-center justify-content-center">
             <h1 id="ab-head">About</h1>
         </div>
     </div>
 
     <!-- Plan your wedding -->
-    <div id="plan-cont" class="container-fluid">
+    <div id="plan-cont" class="container-fluid hide-nav">
         <div class="row  plan-row justify-content-center  mt-5 mb-5">
             <h1 class="title-decorate-3  text-center"></h1>
             <h2 class="gallery-heading text-center">Plan Your Wedding In 4 Steps</h2>
@@ -153,7 +153,7 @@
 
     <!-- our team  -->
 
-    <div class="container">
+    <div class="container hide-nav">
         <div class="row">
             <div id="our-team-head" class="col-sm-6 offset-sm-3 mt-4 mb-4">
                 <h1 class="title-decorate-4  text-center"></h1>
@@ -230,7 +230,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid">
+    <div class="container-fluid hide-nav">
         <div id="footer-row-container" class="row footer-row text-white">
             <div class="col-md-4">
                 <!-- Logo -->
@@ -329,6 +329,13 @@
                 $(".content-for-planning-2").css("display", "none");
                 $("#display-3").css("display", "none");
                 $(".content-for-planning-3").css("display", "none");
+            })
+        })
+
+        // navigation
+        $(document).ready(function() {
+            $(".menu-btn").click(function() {
+                $(".hide-nav").toggle()
             })
         })
     </script>

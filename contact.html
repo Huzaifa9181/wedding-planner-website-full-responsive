@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conatct</title>
+    <title>Contact</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-5.css">
@@ -24,11 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- navigation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script>
-        function alert() {
-            document.getElementsByTagName('h1').style.display = "";
-        }
-    </script>
 </head>
 
 <body>
@@ -46,21 +41,20 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="register.html">Register</a></li>
             <li><a href="signlog.html">Log In</a></li>
             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="header-img material-parallax parallax ">
+    <div class="header-img material-parallax parallax hide-contact">
         <img src="images/page-img.jpg " class="img-fluid">
     </div>
-    <div class="container">
+    <div class="container hide-contact">
         <div class="row text-center hide justify-content-center">
             <h1 class="contact-heading">Contact</h1>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container hide-contact">
         <form onsubmit="return validation()">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Full Name</label>
@@ -78,7 +72,7 @@
         </form>
     </div>
     <!-- Footer -->
-    <div class="container-fluid hide">
+    <div class="container-fluid hide-contact">
         <div id="footer-row-container" class="row footer-row text-white">
             <div class="col-md-4">
                 <!-- Logo -->
@@ -137,6 +131,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".menu-btn").click(function() {
+                $(".hide-contact").toggle()
+            })
+        })
+    </script>
 </body>
 
 </html>
